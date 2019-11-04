@@ -1,0 +1,7 @@
+.ipynb_checkpoints*
+Images
+*.csv
+jupyter.log
+aux*
+ipynbs*
+random*
