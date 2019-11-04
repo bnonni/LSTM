@@ -5,3 +5,5 @@ jupyter.log
 aux*
 ipynbs*
 random*
+url.py
+.idea
