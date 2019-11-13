@@ -107,7 +107,18 @@ Training = 200,310
 Validation = 43,350
 Testing = 43,535
 
-Rd 22: 200 nodes, 0.2 dropout, 5 hidden layers, no activation function, 350 epochs, batch size=20, shuffle=true
-Training =
-Validation =
-Testing =
+Rd 22: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 250 epochs, batch size=30, shuffle=true
+Training = 203,681
+Validation = 32,057
+Testing = 42,704
+
+//Changed input to { High, Low } = X; y = price
+Rd 23: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 250 epochs, batch size=32, shuffle=true
+Training Loss = 132,245
+Mean Abs Error = 288
+Mean Abs Percent Error = 2.8
+
+Rd 24: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 250 epochs, batch size=32, shuffle=true
+Training Loss = 132,245
+Mean Abs Error = 288
+Mean Abs Percent Error = 2.8

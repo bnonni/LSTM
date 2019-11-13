@@ -7,3 +7,4 @@ ipynbs*
 random*
 url.py
 .idea
+__pycache__
