@@ -216,16 +216,16 @@ for i in range(1, len(collection_lengths)):
 # In[410]:
 # BTC_Data = { 'Datetime': BTC_dt_epochs[0:min], 'Prices': BTC_prices[0:min], 'High': BTC_highs[0:min], 'Low': BTC_lows[0:min] }
 
-BTC_Data = { 'Datetime': BTC_dt_epochs[0:min],
-             'Prices': BTC_prices[0:min],
-             'Volumes':BTC_volumes[0:min],
-             'High':BTC_highs[0:min],
-             'Low':BTC_lows[0:min],
-             'RSI': BTC_RSIs[0:min],
-             'ADL' : BTC_ADLs[0:min],
-             'ADL_slope': BTC_ADL_slope[0:min],
-             'OBV' : BTC_OBVs[0:min],
-             'OBV_slope': BTC_OBV_slope[0:min] }
+BTC_Data = {'Datetime': BTC_dt_epochs[0:min],
+            'Prices': BTC_prices[0:min],
+            'Volumes':BTC_volumes[0:min],
+            'High':BTC_highs[0:min],
+            'Low':BTC_lows[0:min],
+            'RSI': BTC_RSIs[0:min],
+            'ADL' : BTC_ADLs[0:min],
+            'ADL_slope': BTC_ADL_slope[0:min],
+            'OBV' : BTC_OBVs[0:min],
+            'OBV_slope': BTC_OBV_slope[0:min]}
 
 # In[411]:
 keys = BTC_Data.keys()
@@ -244,7 +244,7 @@ BTC_df.describe()
 BTC_df.info()
 
 # In[415]:
-plt.plot( BTC_df.Datetime, BTC_df.Prices)
+plt.plot( BTC_df.Datetime[0:1000], BTC_df.Prices[0:1000])
 
 # In[417]:
 BTC_df['Volumes'] = BTC_df.Volumes.astype('float64')
@@ -253,14 +253,14 @@ BTC_df['Low'] = BTC_df.Low.astype('float64')
 
 # In[419]:
 # ADL_avg = BTC_df.ADL.mean()
-# RSI_avg = BTC_df.RSI.mean()
 # ADL_slp_avg = BTC_df.ADL_slope.mean()
-# OBV_slp_avg = BTC_df.OBV_slope.mean()
+RSI_avg = BTC_df.RSI.mean()
+OBV_slp_avg = BTC_df.OBV_slope.mean()
 
 # In[420]:
-# values = {'OBV_slope': OBV_slp_avg, 'RSI': RSI_avg, 'ADL_slope': ADL_slp_avg }
-# BTC_df = BTC_df.fillna(value=values)
-# BTC_df.head()
+values = {'OBV_slope': OBV_slp_avg, 'RSI': RSI_avg }
+BTC_df = BTC_df.fillna(value=values)
+BTC_df.head()
 
 # In[421]:
 BTC_df.info()
