@@ -5,7 +5,6 @@
 # %matplotlib inline
 from tensorflow.keras.layers import Dense, LSTM, Dropout
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import RMSprop
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from url import URL
@@ -273,14 +272,15 @@ BTC_df.info()
 # In[384]:
 np.random.seed(42)
 # X = BTC_df('Prices', axis=1).values
-X = BTC_df[['High', 'Low']].values
+print('\n[ADL, ADL_slope] Analysis\n')
+X = BTC_df[['ADL', 'ADL_slope']].values
 y = BTC_df['Prices'].values
 print(X.shape)
 print(y.shape)
 
 # In[384]:
 # split into train & test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=1)
 
 # set scalar & scale train, test data
 scalar = MinMaxScaler(feature_range=(0, 1))
@@ -327,8 +327,7 @@ print(model.summary())
 
 
 # In[350]:
-model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=300, shuffle=True, batch_size=32)
-
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=100, shuffle=True, batch_size=32)
 
 # In[354]:
 
