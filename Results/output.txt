@@ -262,7 +262,6 @@ Acc = 1 -  =
 
 /*-------------------------------------------------------------------------------*/
 Rd 31 OBV: 200 nodes, 0.2 dropout, 5 hidden layers, no activation function, 300 epochs, batch size=32, shuffle=true
-DONE NEED TO INPUT RESULTS BELOW
 X = OBV, OBV_slope; y = actual prices
 
 Training epoch :
@@ -276,14 +275,115 @@ Mean Abs Error =
 Mean Abs Percent Error =
 
 Testing:
+Loss = 828,478
+Mean Abs Error = 761
+Mean Abs Percent Error = 7.57
+Acc = 1 -  = [XX]
+
+/*--------------------------------------------------------------------------------*/
+Rd 32: 200 nodes, 0.2 dropout, 5 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = ADL, ADL_slope; y = actual prices
+
+Training epoch :
 Loss =
 Mean Abs Error =
 Mean Abs Percent Error =
-Acc = 1 -  =
+
+Validation:
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Testing:
+Loss = 1,465,556
+Mean Abs Error = 957
+Mean Abs Percent Error = 9.8
+Acc = 1 -  = [XX]
 
 /*-------------------------------------------------------------------------------*/
-Rd 32:
-X = ; y = actual prices
+Rd 33: 200 nodes, 0.2 dropout, 5 hidden layers, no activation function, 300 epochs, batch size=32, shuffle=true
+X = RSI; y = actual prices
+
+Training epoch :
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Validation:
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Testing:
+Loss = 2093
+Mean Abs Error = 32
+Mean Abs Percent Error = 0.3454852
+Acc = 1 - 0.35 = 0.65 = 65% accurate
+
+/*-------------------------------------------------------------------------------*/
+Rd 34: 200 nodes, 0.2 dropout, 5 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [RSI, Prices] Analysis; y = actual prices
+
+Training epoch :
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Validation:
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Testing:
+Loss = 1383
+Mean Abs Error = 27
+Mean Abs Percent Error = 26%
+Acc = 1 - 0.26 = 74%
+
+/*-------------------------------------------------------------------------------*/
+Rd 35: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [OBV, Prices]; y = actual prices
+
+Training epoch :
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Validation:
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Testing:
+Loss = 1261
+Mean Abs Error = 29
+Mean Abs Percent Error = 0.29
+Acc = 1 - 0.29 = 71%
+
+/*-------------------------------------------------------------------------------*/
+Rd 36: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [ADL, Prices]; y = actual prices
+
+Training epoch :
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Validation:
+Loss =
+Mean Abs Error =
+Mean Abs Percent Error =
+
+Testing:
+Loss = 2838
+MSE = 2838
+Mean Abs Error = 41
+Mean Abs Percent Error = 0.44
+Acc = 1 - 0.44 = 56%
+
+/*-------------------------------------------------------------------------------*/
+Rd 37: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [High, Low, RSI]; y = actual prices
 
 Training epoch :
 Loss =
@@ -297,66 +397,18 @@ Mean Abs Percent Error =
 
 Testing:
 Loss =
+MSE =
 Mean Abs Error =
 Mean Abs Percent Error =
-Acc = 1 -  =
+Acc = 1 -  = %
 
 /*-------------------------------------------------------------------------------*/
-Rd :
-X = ; y = actual prices
+Rd 38: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
 
-Training epoch :
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-
-Validation:
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-
-Testing:
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-Acc = 1 -  =
 
 /*-------------------------------------------------------------------------------*/
-Rd :
-X = ; y = actual prices
+Rd 39: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
 
-Training epoch :
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-
-Validation:
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-
-Testing:
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-Acc = 1 -  =
 
 /*-------------------------------------------------------------------------------*/
-Rd :
-X = ; y = actual prices
-
-Training epoch :
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-
-Validation:
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-
-Testing:
-Loss =
-Mean Abs Error =
-Mean Abs Percent Error =
-Acc = 1 -  =
+Rd 40: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
