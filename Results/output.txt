@@ -383,7 +383,9 @@ Acc = 1 - 0.44 = 56%
 
 /*-------------------------------------------------------------------------------*/
 Rd 37: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
-X = [High, Low, RSI]; y = actual prices
+X = [RSI, High, Low]; y = actual prices
+
+[2838.155937755825, 2838.1572, 41.621723, 0.4374852]
 
 Training epoch :
 Loss =
@@ -404,11 +406,38 @@ Acc = 1 -  = %
 
 /*-------------------------------------------------------------------------------*/
 Rd 38: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
-
+X = [OBV_slope, Prices]
+[1535761.9366023287, 1535761.5, 996.4403, 10.26319]
 
 /*-------------------------------------------------------------------------------*/
 Rd 39: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
-
+X = [ADL_slope, Prices]
 
 /*-------------------------------------------------------------------------------*/
 Rd 40: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [OBV, OBV_slope, Prices]
+
+/*-------------------------------------------------------------------------------*/
+Rd 41: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [ADL, ADL_slope, Prices]
+
+/*-------------------------------------------------------------------------------*/
+Rd 42: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [RSI, High, Low]
+
+/*-------------------------------------------------------------------------------*/
+Rd 43: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [ADL, High, Low]
+
+/*-------------------------------------------------------------------------------*/
+Rd 44: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [OBV, High, Low]
+
+/*-------------------------------------------------------------------------------*/
+Rd 45: 200 nodes, 0.2 dropout, 4 hidden layers, no activation function, 100 epochs, batch size=32, shuffle=true
+X = [ADL, ADL_slope, High, Low]
+
+X = [OBV, OBV_slope, High, Low]
+X = [ADL_slope, High, Low]
+X = [OBV_slope, High, Low]
+X =
