@@ -1,1 +1,1 @@
-[![Coding time tracker](https://wakatime.com/badge/github/bnonni/Crypto_Predictor.svg)](https://wakatime.com/badge/github/bnonni/Crypto_Predictor)[![Coding time tracker](https://wakatime.com/badge/github/bnonni/Crypto_Predictor.svg)](https://wakatime.com/badge/github/bnonni/Crypto_Predictor)
+[![Coding time tracker](https://wakatime.com/badge/github/bnonni/Crypto_Predictor.svg)](https://wakatime.com/badge/github/bnonni/Crypto_Predictor)
