@@ -1,0 +1,3 @@
+
+[ADL_slope] Analysis
+None<tensorflow.python.keras.callbacks.History object at 0x15ea60750>[1535629.3774932004, 1535628.9, 10.2603655]
