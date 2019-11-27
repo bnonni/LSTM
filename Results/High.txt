@@ -1,3 +1,0 @@
-
-[High] Analysis
-None<tensorflow.python.keras.callbacks.History object at 0x14ab75e50>[2313.379437098881, 2313.3809, 0.349749]

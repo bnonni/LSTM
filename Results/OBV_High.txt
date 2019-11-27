@@ -1,3 +1,0 @@
-
-[OBV] Analysis
-None<tensorflow.python.keras.callbacks.History object at 0x158b82590>[1535816.4423879848, 1535815.5, 10.264168]

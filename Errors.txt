@@ -1,1 +1,8 @@
-write() argument must be str, not Historywrite() argument must be str, not History
+write() argument must be str, not Historywrite()
+argument must be str, not History[Errno 32] Broken pipeA target array with shape (39965, 1) was passed for an output of shape (None, 2, 1) while using as loss `mean_squared_error`. This loss expects targets to have the same shape as the output.
+
+
+
+
+
+A target array with shape (39965, 1) was passed for an output of shape (None, 2, 1) while using as loss `mean_squared_error`. This loss expects targets to have the same shape as the output.
