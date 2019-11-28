@@ -1,0 +1,3 @@
+
+[SOFTMAX TRIAL: High] vs. Prices Analysis
+[94358670.63315527, 94358710.0, 96.799545]

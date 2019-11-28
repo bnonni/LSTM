@@ -1,0 +1,3 @@
+
+[Low + OBV_slope] vs. Prices Analysis
+[1632062.1809812593, 1632060.8, 11.071412]
