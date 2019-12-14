@@ -61,11 +61,11 @@ try:
 
     f = open('results/NewData_OriginalModel/HighLowRSI_vs_Prices/Results.txt', 'a')
     f.write(analysis_name)
-
-    X = BTC_df.drop(['Unnamed: 0', 'Datetime','Prices','Volumes', 'ADL', 'OBV', 'ADL_slope', 'OBV_slope'], axis=1).values
+    # 'Unnamed: 0', 'Datetime','Prices','Volumes', 'ADL', 'OBV', 'ADL_slope', 'OBV_slope'
+    X = BTC_df[['High','RSI']].values
     y = BTC_df['Prices'].values
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, shuffle=False)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, shuffle=False)
 
     scalar = MinMaxScaler(feature_range=(0, 1))
     X_train = scalar.fit_transform(X_train)
@@ -76,21 +76,24 @@ try:
 
     model = Sequential()
 
-    model.add(LSTM(250, input_shape=(X_train.shape[1], 1), return_sequences=True))
+    model.add(LSTM(150, input_shape=(X_train.shape[1], 1), return_sequences=True))
 
-    model.add(LSTM(250, return_sequences=True))
+    model.add(LSTM(150, return_sequences=True, recurrent_dropout=0.1))
+    model.add(Dropout(0.2))
 
-    model.add(LSTM(250, return_sequences=True))
+    model.add(LSTM(150, return_sequences=True, recurrent_dropout=0.1))
+    model.add(Dropout(0.2))
 
-    model.add(Dropout(0.05))
+    model.add(LSTM(150, return_sequences=True, recurrent_dropout=0.1))
+    model.add(Dropout(0.2))
 
-    model.add(LSTM(250, return_sequences=True))
+    model.add(LSTM(150, return_sequences=True, recurrent_dropout=0.1))
+    model.add(Dropout(0.2))
 
-    model.add(LSTM(250, return_sequences=True))
+    model.add(LSTM(150, return_sequences=True))
+    model.add(Dropout(0.5))
 
-    model.add(LSTM(250, return_sequences=True))
-
-    model.add(LSTM(250))
+    model.add(LSTM(150))
 
     model.add(Dense(1))
 
@@ -100,7 +103,8 @@ try:
     f.write(str(summary))
     f.write('\n')
 
-    model.fit(X_train, y_train, batch_size=5, validation_split=0.5, epochs=50, shuffle=False)
+    model.fit(X_train, y_train, batch_size=50,\
+              validation_split=0.2, epochs=200, shuffle=False)
 
     model_eval = model.evaluate(X_test, y_test, verbose=2)
     print(model_eval)

@@ -181,3 +181,13 @@ All layers in a Sequential model should have a single output tensor. For multi-o
 All layers in a Sequential model should have a single output tensor. For multi-output layers, use the functional API.
 Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (49300, 1)
 Error when checking input: expected lstm_input to have shape (32, 1) but got array with shape (3, 1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (49300, 1)
+Input 0 of layer lstm is incompatible with the layer: expected ndim=3, found ndim=4. Full shape received: [None, 30, 6902, 1]
+Error when checking input: expected lstm_input to have shape (6902.0, 1) but got array with shape (3, 1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (69020, 3)
+cannot reshape array of size 207060 into shape (69020,15,1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (29580, 1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (29580, 1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (29580, 1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (29580, 1)
+Error when checking input: expected lstm_input to have 3 dimensions, but got array with shape (29580, 1)

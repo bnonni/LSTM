@@ -102,7 +102,7 @@ try:
     model.add(LSTM(250, return_sequences=True))
 
     # output layer
-    model.add(LSTM())
+    model.add(LSTM(1))
 
     model.add(Dense(1, activation='tanh'))
 
