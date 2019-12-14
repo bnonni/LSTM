@@ -1,0 +1,3 @@
+
+[Prices + Volumes] vs. Prices Analysis
+[11812.166083697459, 11812.165, 0.7805916]

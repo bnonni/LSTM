@@ -1,0 +1,3 @@
+
+[TANH TRIAL: Volumes] vs. Prices Analysis
+[1189787.5245369559, 1189788.0, 9.92702]

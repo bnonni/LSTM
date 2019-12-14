@@ -329,7 +329,7 @@ print(model.summary())
 
 
 # In[350]:  
-model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=100, shuffle=True, batch_size=32)
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=100, shuffle=False, batch_size=32)
 
 # In[354]:
 

@@ -1,0 +1,3 @@
+
+[Prices + ADL_slope] vs. Prices Analysis
+[1744138.9203254876, 1744138.5, 11.790006]

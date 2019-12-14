@@ -1,0 +1,3 @@
+
+[Prices + High] vs. Prices Analysis
+[4327.98709888284, 4327.982, 0.51697785]

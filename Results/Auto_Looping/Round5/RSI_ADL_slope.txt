@@ -1,0 +1,3 @@
+
+[RSI + ADL_slope] vs. Prices Analysis
+[1630636.21760881, 1630635.8, 11.063954]

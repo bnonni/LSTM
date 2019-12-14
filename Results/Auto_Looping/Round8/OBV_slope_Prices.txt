@@ -1,0 +1,3 @@
+
+[Prices + OBV_slope] vs. Prices Analysis
+[1743636.1061538146, 1743636.0, 11.789595]

@@ -1,0 +1,13 @@
+
+[Low, Prices] vs. Prices Analysis
+
+Model Evaluation [X_test, y_test] [4713.12927235043, 4713.1323, 0.54471236]
+
+Model Predictions [X_test => y_pred]
+[[8044.532 ]
+ [8200.598 ]
+ [9520.956 ]
+ ...
+ [8263.47  ]
+ [9875.344 ]
+ [8147.0864]]
