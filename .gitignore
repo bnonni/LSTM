@@ -5,6 +5,7 @@ jupyter.log
 aux*
 ipynbs*
 random*
-url.py
+env.py
 .idea
 __pycache__
+.venv

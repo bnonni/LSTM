@@ -1,5 +1,5 @@
-from pymongo import *
-from url import URL
+from pymongo import MongoClient
+from env import URL
 import statistics as stat
 from time import strptime, mktime
 import pandas as pd
