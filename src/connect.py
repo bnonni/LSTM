@@ -7,7 +7,7 @@ import sys
 import re
 
 client = MongoClient(URL)
-db = client.crypto_wallet
+db = client._wallet
 
 def checkLen(a, b):
     if len(a) == len(b):
